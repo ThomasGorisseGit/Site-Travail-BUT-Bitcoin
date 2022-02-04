@@ -134,4 +134,62 @@ footer>ul>li{
     padding-top: 2vh;
     margin-right: 2vh;
 }
+main{
+    margin-top:5vh;
+}
+div.feuille-gauche{
+    transition:0.5s;
+    background-color: var(--feuille);
+    margin-left: 8vh;
+    flex: 0.5;
+    max-width: 40%;
+    padding:1vh;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top:solid 2px var(--deepgray);
 
+}
+div.feuille-gauche:hover, div.feuille-droite:hover, div.feuille-middle:hover{
+    transition:0.5s;
+    transform: scale(1.1);
+}
+div.feuille-droite {
+    margin: auto;
+    background-color: var(--feuille);
+    flex: 0.5;
+    margin-right: 8vh;
+    max-width: 40%;
+    padding:1vh;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top:solid 2px var(--deepgray);
+    transition:0.5s;
+
+}
+section>h2{
+    color:var(--orange);
+    font-size:1em;
+}
+p{
+    color: var(--white);
+}
+a.surligne{
+    color:var(--orange);
+    text-decoration: none;
+
+}
+div.feuille-middle {
+    margin: auto;
+    text-align: center;
+    background-color: var(--feuille);
+    padding:1vh;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top:solid 2px var(--deepgray);
+    transition:0.5s;
+    margin-top:3vh;
+    max-width: 80%;
+}
+div.flexbox{
+    display: flex;
+}
