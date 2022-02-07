@@ -138,15 +138,17 @@ main{
     margin-top:5vh;
 }
 div.feuille-gauche{
-    transition:0.5s;
     background-color: var(--feuille);
-    margin-left: 8vh;
     flex: 0.5;
+    margin-left: 10%;
+    margin-right: 2%;
     max-width: 40%;
     padding:1vh;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
     border-top:solid 2px var(--deepgray);
+    transition:0.5s;
+    margin-top:2vh;
 
 }
 div.feuille-gauche:hover, div.feuille-droite:hover, div.feuille-middle:hover{
@@ -154,16 +156,17 @@ div.feuille-gauche:hover, div.feuille-droite:hover, div.feuille-middle:hover{
     transform: scale(1.1);
 }
 div.feuille-droite {
-    margin: auto;
     background-color: var(--feuille);
     flex: 0.5;
-    margin-right: 8vh;
+    margin-right: 10%;
+    margin-left: 2%;
     max-width: 40%;
     padding:1vh;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
     border-top:solid 2px var(--deepgray);
     transition:0.5s;
+    margin-top:2vh;
 
 }
 section>h2{
@@ -192,4 +195,20 @@ div.feuille-middle {
 }
 div.flexbox{
     display: flex;
+}
+div.separation{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: solid 2px var(--deepgray);
+
+    height: 0;
+}
+a.mini-surligner{
+    color:white;
+    text-decoration:none;
+   
+}
+li{
+    color: var(--white);
+    list-style: none;
 }

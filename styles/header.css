@@ -9,6 +9,7 @@ div.feuille-content{
 header.content>div>h1{
     text-align: left;
     color: white;
+    margin-right: 2vh;
 }
 
 header.content>div>img
