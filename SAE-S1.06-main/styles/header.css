@@ -67,3 +67,9 @@ header.content>div>nav>ol{
     color: var(--orange);
     text-decoration: overline 2px var(--orange);
 }
+@media screen and (max-width:1300px)
+{
+    div.feuille{
+        background: purple;
+    }
+}
