@@ -1,0 +1,69 @@
+div.feuille-content{
+    background-color: var(--feuille);
+    margin: auto;
+    width: 90%;
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 2vh;
+}
+header.content>div>h1{
+    text-align: left;
+    color: white;
+    margin-right: 2vh;
+}
+
+header.content>div>img
+{
+    margin-top:2.6vh ;
+    margin-right: 1vh;
+    width: 50px;
+    height: 50px;
+}
+/* Réglage de la nav-barre */
+header.content>div>nav{
+    padding: 0;
+    margin: 0;
+}
+header.content>div>nav>ol{
+    margin: 1vh;
+    padding: 0;
+    list-style: none;
+
+}
+#nav-bar-content
+{
+    background-color: var(--lightblack);
+    display: inline-block;
+    padding-top: 2vh;
+    padding-bottom:2vh;
+    /* Premiers réglages des borders */
+    border-bottom: solid 2px var(--deepgray);
+    border-top: solid 2px var(--deepgray);
+    border-radius: 10px;
+}
+#nav-bar-content>li{
+    display: inline-block;
+}
+#nav-bar-content>li>a{
+    text-decoration: none;
+    color: var(--white);
+    border-right: solid 2px var(--deepgray);
+    padding: 2vh;
+}
+/*Réglage pour les radius des border */
+
+#nav-bar-content>li>a.accueil{
+    color:var(--orange);
+    border-left: solid 2px var(--deepgray);
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+    
+}
+#nav-bar-content>li:last-child>a{
+    border-radius: 10px;
+}
+/* Ajout des :hover */
+#nav-bar-content>li>a:hover {
+    color: var(--orange);
+    text-decoration: overline 2px var(--orange);
+}

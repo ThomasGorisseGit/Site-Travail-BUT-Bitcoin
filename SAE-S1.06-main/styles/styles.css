@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+
+/*Initialisation des couleurs du projet : 
+    Des nuances de noir pour le background
+    Du orange rappelant la notion de bitcoin 
+    Du blanc pour le texte et autres
+*/
+:root{
+    --feuille: rgb(43, 43, 43);
+    --lightblack:#2c2b2b;
+    --deepblack:rgb(32, 32, 32);
+    --deepgray:rgb(73, 73, 73);
+    --lightgray:rgb(184, 184, 184);
+    --orange:rgb(240, 129, 2);
+    --white:rgb(207, 207, 207);
+    --global:rgb(37, 37, 37);
+}
+/*
+le body pour les régagles généraux
+    La couleur du background
+    Le réglage de la font en général
+*/
+body{
+    margin: 0;
+    padding: 0;
+    margin-top:2vh;
+    background-color: var(--deepblack);
+    font-size: 1.2em;
+    font-family: 'Rubik', sans-serif;
+    max-width: 100%;
+    max-height: 100px;
+    max-height: 100%;
+}
+div.feuille{
+
+    background-color: var(--feuille);
+    margin: auto;
+    margin-top: 25vh;
+    width: 70%;
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 2vh;
+    
+    
+}
+/*Réglage du header : */
+header{
+    padding: 0;
+    margin: 0;
+}
+header>div.flexbox-header{
+    display: flex;
+    justify-content: center;
+} 
+/* Réglage du titre */
+header>div>h1{
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+header>div>img
+{
+    margin-top:2.6vh ;
+    margin-right: 1vh;
+    width: 50px;
+    height: 50px;
+}
+/* Réglage de la nav-barre */
+header>nav{
+    padding: 0;
+    margin: 0;
+}
+header>nav>ol{
+    margin: 1vh;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+header>nav>ol>div#nav-bar
+{
+    background-color: var(--lightblack);
+    display: inline-block;
+    padding-top: 2vh;
+    padding-bottom:2vh;
+    /* Premiers réglages des borders */
+    border-bottom: solid 2px var(--deepgray);
+    border-top: solid 2px var(--deepgray);
+    border-radius: 10px;
+}
+header>nav>ol>div>li{
+    display: inline-block;
+}
+header>nav>ol>div>li>a{
+    text-decoration: none;
+    color: var(--white);
+    border-right: solid 2px var(--deepgray);
+    padding: 2vh;
+}
+/*Réglage pour les radius des border */
+
+header>nav>ol>div>li>a.accueil{
+    color:var(--orange);
+    border-left: solid 2px var(--deepgray);
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+    
+}
+header>nav>ol>div>li:last-child>a{
+    border-radius: 10px;
+}
+/* Ajout des :hover */
+header>nav>ol>div>li>a:hover {
+    color: var(--orange);
+    text-decoration: overline 2px var(--orange);
+}
+
+/* Réglages du footer 
+    image du background 
+    les prénoms/noms
+*/
+footer{
+    margin-top: 39.7vh;
+    padding-bottom: 3vh;
+    font-size: 0.8em;
+    text-align: left;
+    color: #9D9D9D;
+    background: var(--deepblack) url(../img/test.svg);
+}
+footer>ul{
+    list-style: none;
+    text-align: right;
+}
+footer>ul>li{
+    padding-top: 2vh;
+    margin-right: 2vh;
+}
+main{
+    margin-top:5vh;
+}
+div.feuille-gauche{
+    background-color: var(--feuille);
+    flex: 0.5;
+    margin-left: 10%;
+    margin-right: 2%;
+    max-width: 40%;
+    padding:1vh;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top:solid 2px var(--deepgray);
+    transition:0.5s;
+    margin-top:3vh;
+
+}
+div.feuille-gauche:hover, div.feuille-droite:hover, div.feuille-middle:hover{
+    transition:0.5s;
+    transform: scale(1.1);
+}
+div.feuille-droite {
+    background-color: var(--feuille);
+    flex: 0.5;
+    margin-right: 10%;
+    margin-left: 2%;
+    max-width: 40%;
+    padding:1vh;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top:solid 2px var(--deepgray);
+    transition:0.5s;
+    margin-top:3vh;
+
+}
+section>h2{
+    color:var(--orange);
+    font-size:1em;
+}
+h3{
+    color: white ;
+    font-size: 0.9em;
+}
+p{
+    color: var(--white);
+}
+a.surligne{
+    color:var(--orange);
+    text-decoration: none;
+
+}
+a.mini-surligner{
+    color:white;
+    text-decoration:none;
+   
+}
+div.feuille-middle {
+    margin: auto;
+    text-align: center;
+    background-color: var(--feuille);
+    padding:1vh;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top:solid 2px var(--deepgray);
+    transition:0.5s;
+    margin-top:3vh;
+    max-width: 80%;
+}
+div.flexbox{
+    display: flex;
+}
+div.separation{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: solid 2px var(--deepgray);
+
+    height: 0;
+}
+li{
+    color: var(--white);
+    list-style: none;
+}
+/* réglage de l'image du cours du Bitcoin */
+#cours{
+    width: 50%;
+    display: block;
+    margin:auto;
+    margin-top:3vh;
+    border-radius:10px;
+
+    
+}
+/*et de l'image du tableau */
+#tab{
+    width: 60%;
+    border-radius: 10px;
+}
+/*réglage des h3 servant de sous partie*/
+.sous-titre{
+    text-align: center;
+    color:var(--orange);
+}
+.feuille-globale{
+    background-color: var(--global);
+    width: 70%;
+    margin:auto;
+    padding-bottom: 6vh;
+    padding-top: 2vh;
+    text-align: center;
+}
